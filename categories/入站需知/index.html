@@ -4,8 +4,8 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="勇士百科">
-    <meta name="description" content="勇士百科">
+    <meta name="keywords" content="分类: 入站需知, 勇士百科">
+    <meta name="description" content="分类: 入站需知 | 勇士百科">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>勇士百科</title>
+    <title>分类: 入站需知 | 勇士百科</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -259,56 +259,9 @@
 
 </header>
 
-
-<style>
-    .carousel-control {
-        width: 45px;
-        height: 45px;
-        line-height: 55px;
-        border-radius: 45px;
-        background: transparent;
-        cursor: pointer;
-        z-index: 100;
-    }
-
-    #prev-cover {
-        position: absolute;
-        top: 48%;
-        left: 8px;
-    }
-
-    #next-cover {
-        position: absolute;
-        top: 48%;
-        right: 8px;;
-    }
-
-    #prev-cover i {
-        margin-right: 3px;
-    }
-
-    #next-cover i {
-        margin-left: 3px;
-    }
-
-    .carousel-control:hover {
-        background-color:rgba(0, 0, 0, .4);
-    }
-
-    .carousel-control i {
-        color: #fff;
-        font-size: 2.4rem;
-    }
-</style>
-
-
-
-<div class="carousel carousel-slider center index-cover" data-indicators="true" style="margin-top: -64px;">
-    
-
-    <div class="carousel-item red white-text bg-cover about-cover">
-        <div class="container">
-            <div class="row">
+<div class="bg-cover pd-header about-cover">
+    <div class="container">
+    <div class="row">
     <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
         <div class="brand">
             <div class="title center-align">
@@ -329,249 +282,46 @@
 // 每天切换 banner 图.  Switch banner image every day.
 $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
 </script>
-
-            <div class="cover-btns">
-                <a href="#indexCard" class="waves-effect waves-light btn">
-                    <i class="fa fa-angle-double-down"></i>开始阅读
-                </a>
-
-                
-                <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light btn" target="_blank">
-                    <i class="fa fa-github-alt"></i>Github
-                </a>
-                
-            </div>
-            <div class="cover-social-link">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-        </div>
     </div>
-
-    
 </div>
-
-<script>
-$(function () {
-    let coverSlider = $('.carousel');
-    coverSlider.carousel({
-        duration: Number('120'),
-        fullWidth: true,
-        indicators: 'true' === 'true'
-    });
-
-    let carouselIntervalId;
-    
-    // Loop to call the next cover article picture.
-    let autoCarousel = function() {
-        carouselIntervalId = setInterval(function () {
-            coverSlider.carousel('next');
-        }, 5000);
-    };
-    autoCarousel();
-    
-
-    let restartPlay = function () {
-        
-        clearInterval(carouselIntervalId);
-        autoCarousel();
-        
-    };
-
-    
-    // prev and next cover post.
-    $('#prev-cover').click(function () {
-        coverSlider.carousel('prev');
-        restartPlay();
-    });
-    $('#next-cover').click(function () {
-        coverSlider.carousel('next');
-        restartPlay();
-    });
-    
-});
-</script>
-
-
 
 <main class="content">
 
     
-    <div id="indexCard" class="index-card">
-        <div class="container ">
-            <div class="card">
-                <div class="card-content">
-                    
-                        <div class="dream">
-    
-    <div class="title center-align">
-        <i class="fa fa-lightbulb-o"></i>&nbsp;&nbsp;公告
-    </div>
-    
-    <div class="row">
-        <div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text">
-            收集有关的摩尔勇士精美图片，有意愿的联系燕麦粥；有兴趣投稿写攻略的联系冫夢。
+
+<div id="category-cloud" class="container chip-container">
+    <div class="card">
+        <div class="card-content">
+            <div class="tag-title center-align">
+                <i class="fa fa-bookmark"></i>&nbsp;&nbsp;文章分类
+            </div>
+            <div class="tag-chips">
+                
+                
+                
+                <a href="/MoerHero.github.io/categories/入站需知/" title="入站需知: 4">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-active "
+                            style="background-color: #F9EBEA;">入站需知
+                        <span class="tag-length">4</span>
+                    </span>
+                </a>
+                
+                
+            </div>
         </div>
     </div>
 </div>
-                    
-
-                    
-
-                    
-
-                    <div id="recommend-sections" class="recommend">
-                        
-
-
-
-
-
-<div class="title"><i class="fa fa-thumbs-o-up"></i>&nbsp;&nbsp;推荐文章</div>
-
-<div class="row">
-
-    
-    
-    <div class="col s12 m6" >
-        <div class="post-card" style="background-image: url('/medias/featureimages/16.jpg')">
-            <div class="post-body">
-                <div class="post-categories">
-                    
-                    <a href="/MoerHero.github.io/categories/入站需知/" class="category" target="_blank">入站需知</a>
-                    
-                </div>
-                <a href="/MoerHero.github.io/2019/09/22/复兴版主要调整/" target="_blank">
-                    <h3 class="post-title">复兴版主要调整</h3>
-                </a>
-                <p class="post-description">
-                    
-                        为了增加游戏乐趣，增强游戏的平衡性，我们对游戏的设定进行了许多调整。
-超时空勇士超时空勇士无需购买，游戏内创建角色后系统会自动赠送。
-每天登
-                    
-                </p>
-                <a href="/MoerHero.github.io/2019/09/22/复兴版主要调整/" target="_blank"
-                        class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #FF5E3A 0%, #FF2A68 100%)">
-                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                </a>
-            </div>
-        </div>
-    </div>
-    
-    
-    <div class="col s12 m6" >
-        <div class="post-card" style="background-image: url('/medias/featureimages/3.jpg')">
-            <div class="post-body">
-                <div class="post-categories">
-                    
-                    <a href="/MoerHero.github.io/categories/入站需知/" class="category" target="_blank">入站需知</a>
-                    
-                </div>
-                <a href="/MoerHero.github.io/2019/09/22/前言/" target="_blank">
-                    <h3 class="post-title">前言</h3>
-                </a>
-                <p class="post-description">
-                    
-                        摩尔勇士复兴计划复兴版是由一群摩尔勇士忠实玩家自发组织并建立的非营利性项目，主要宗旨是重建摩尔勇士，留住美好回忆。
-我们使用的客户端文件都是
-                    
-                </p>
-                <a href="/MoerHero.github.io/2019/09/22/前言/" target="_blank"
-                        class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #EF4DB6 0%, #C643FC 100%)">
-                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                </a>
-            </div>
-        </div>
-    </div>
-    
-    
-    <div class="col s12 m6" data-aos="zoom-in-up">
-        <div class="post-card" style="background-image: url('/medias/featureimages/10.jpg')">
-            <div class="post-body">
-                <div class="post-categories">
-                    
-                    <a href="/MoerHero.github.io/categories/入站需知/" class="category" target="_blank">入站需知</a>
-                    
-                </div>
-                <a href="/MoerHero.github.io/2019/09/22/网站介绍/" target="_blank">
-                    <h3 class="post-title">网站介绍</h3>
-                </a>
-                <p class="post-description">
-                    
-                        分类入站需知关于复兴版摩尔勇士以及该站的一些注意事项。
-文章已置顶。
-萌新修炼手册前身为群内文件《萌新修炼手册（0828）》，现主要由冫夢编
-                    
-                </p>
-                <a href="/MoerHero.github.io/2019/09/22/网站介绍/" target="_blank"
-                        class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #1AD6FD 0%, #1D62F0 100%)">
-                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                </a>
-            </div>
-        </div>
-    </div>
-    
-    
-    <div class="col s12 m6" data-aos="zoom-in-up">
-        <div class="post-card" style="background-image: url('/medias/featureimages/1.jpg')">
-            <div class="post-body">
-                <div class="post-categories">
-                    
-                    <a href="/MoerHero.github.io/categories/入站需知/" class="category" target="_blank">入站需知</a>
-                    
-                </div>
-                <a href="/MoerHero.github.io/2019/09/22/特别鸣谢/" target="_blank">
-                    <h3 class="post-title">特别鸣谢</h3>
-                </a>
-                <p class="post-description">
-                    
-                        游戏相关开发维护游戏Timlee
-缓存文件Lord M、阿格莱雅、崇林丶兰城、囧天大圣、乐乐熊、梦逝、南宫逸枫、我是好人
-群管理Lord M
-                    
-                </p>
-                <a href="/MoerHero.github.io/2019/09/22/特别鸣谢/" target="_blank"
-                        class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #FFCC00 0%, #FF9500 100%)">
-                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                </a>
-            </div>
-        </div>
-    </div>
-    
-
-</div>
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
 
     
 
-    <!-- 所有文章卡片 -->
     <article id="articles" class="container articles">
-        <div class="row article-row">
+        <div class="row tags-posts">
             
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
                     <a href="/MoerHero.github.io/2019/09/22/复兴版主要调整/">
-                        <div class="card-image">
+                        <div class="card-image tag-image">
                             
                             
                             <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="复兴版主要调整">
@@ -579,7 +329,6 @@ $(function () {
                             <span class="card-title">复兴版主要调整</span>
                         </div>
                     </a>
-
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
@@ -611,10 +360,10 @@ $(function () {
                 </div>
             </div>
             
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
                     <a href="/MoerHero.github.io/2019/09/22/网站介绍/">
-                        <div class="card-image">
+                        <div class="card-image tag-image">
                             
                             
                             <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="网站介绍">
@@ -622,7 +371,6 @@ $(function () {
                             <span class="card-title">网站介绍</span>
                         </div>
                     </a>
-
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
@@ -654,10 +402,10 @@ $(function () {
                 </div>
             </div>
             
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
                     <a href="/MoerHero.github.io/2019/09/22/特别鸣谢/">
-                        <div class="card-image">
+                        <div class="card-image tag-image">
                             
                             
                             <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="特别鸣谢">
@@ -665,7 +413,6 @@ $(function () {
                             <span class="card-title">特别鸣谢</span>
                         </div>
                     </a>
-
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
@@ -695,10 +442,10 @@ $(function () {
                 </div>
             </div>
             
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
                     <a href="/MoerHero.github.io/2019/09/22/前言/">
-                        <div class="card-image">
+                        <div class="card-image tag-image">
                             
                             
                             <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="前言">
@@ -706,7 +453,6 @@ $(function () {
                             <span class="card-title">前言</span>
                         </div>
                     </a>
-
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
@@ -738,9 +484,7 @@ $(function () {
             
         </div>
     </article>
-
 </main>
-
 
 
 <footer class="page-footer bg-color">
