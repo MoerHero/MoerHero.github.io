@@ -4,6 +4,58 @@
   
     
     <entry>
+      <title>地图野怪分布</title>
+      <link href="/MoerHero.github.io/2019/09/29/%E5%9C%B0%E5%9B%BE%E9%87%8E%E6%80%AA%E5%88%86%E5%B8%83/"/>
+      <url>/MoerHero.github.io/2019/09/29/%E5%9C%B0%E5%9B%BE%E9%87%8E%E6%80%AA%E5%88%86%E5%B8%83/</url>
+      
+        <content type="html"><![CDATA[<h2 id="modify6">地图怪物分布</h2><div>                    <p>                        为了分散各等级练级的场所，我们对怪物分布和等级进行了一些调整。<br>                        隐形怪的等级为所有参战角色等级的平均值同时受地图怪物等级范围限制。                    </p></div><h2 id="分布表"><a href="#分布表" class="headerlink" title="分布表"></a><strong>分布表</strong></h2><table>                    <thead>                        <tr>                            <th width="25%">地图</th>                            <th>怪物类型</th>                            <th>怪物等级</th>                            <th>怪物数量</th>                        </tr>                    </thead>                    <tbody><tr><td>吉普1号地道</td><td>隐形怪</td><td>1-20</td><td>队伍数量±2</td></tr><tr><td>吉普2号地道</td><td>隐形怪</td><td>1-20</td><td>队伍数量±2</td></tr><tr><td>下水道一层</td><td>隐形怪</td><td>10-20</td><td>队伍数量±2</td></tr><tr><td>下水道二层</td><td>隐形怪</td><td>20-30</td><td>队伍数量±2</td></tr><tr><td>下水道三层</td><td>隐形怪</td><td>30-50</td><td>队伍数量±2</td></tr><tr><td>下水道四层</td><td>隐形怪</td><td>20-60</td><td>队伍数量±2</td></tr><tr><td>下水道五层</td><td>隐形怪</td><td>30-70</td><td>队伍数量±2</td></tr><tr><td>下水道六层</td><td>隐形怪</td><td>40-80</td><td>队伍数量±2</td></tr><tr><td>下水道七层</td><td>隐形怪</td><td>40-90</td><td>队伍数量±2</td></tr><tr><td>下水道八层</td><td>隐形怪</td><td>50-100</td><td>队伍数量±2</td></tr><tr><td>格历尔平原1区</td><td></td><td>10-15</td><td>2-4</td></tr><tr><td>格历尔平原2区</td><td></td><td>15-20</td><td>2-4</td></tr><tr><td>格历尔平原3区</td><td></td><td>20-25</td><td>3-5</td></tr><tr><td>格历尔平原4区</td><td></td><td>25-30</td><td>3-5</td></tr><tr><td>格历尔平原5区</td><td></td><td>30-35</td><td>4-6</td></tr><tr><td>格历尔平原6区</td><td></td><td>35-40</td><td>4-6</td></tr><tr><td>格历尔平原7区</td><td></td><td>40-45</td><td>4-6</td></tr><tr><td>格历尔平原8区</td><td></td><td>45-50</td><td>4-6</td></tr><tr><td>格历尔平原10区</td><td></td><td>55-60</td><td>4-6</td></tr><tr><td>格历尔平原11区</td><td></td><td>60-65</td><td>4-6</td></tr><tr><td>格历尔平原12区</td><td></td><td>65-70</td><td>4-6</td></tr><tr><td>海底洞穴一</td><td>隐形怪</td><td>10-50</td><td>队伍数量±2</td></tr><tr><td>风之洞穴一层</td><td>隐形怪</td><td>20-60</td><td>队伍数量±2</td></tr><tr><td>风之洞穴二层</td><td>隐形怪</td><td>40-80</td><td>队伍数量±2</td></tr><tr><td>风之洞穴三层</td><td>隐形怪</td><td>60-100</td><td>队伍数量±2</td></tr><tr><td>锁修塔F1</td><td>隐形怪</td><td>20-60</td><td>队伍数量±2</td></tr><tr><td>锁修塔F2</td><td></td><td>70-80</td><td>3-7</td></tr><tr><td>锁修塔F3</td><td>隐形怪</td><td>40-80</td><td>队伍数量±2</td></tr><tr><td>锁修塔F4</td><td>隐形怪</td><td>60-100</td><td>队伍数量±2</td></tr><tr><td>吉普3号地道</td><td>隐形怪</td><td>40-60</td><td>队伍数量±2</td></tr><tr><td>永恒林荫1</td><td></td><td>85-90</td><td>5-8</td></tr><tr><td>永恒林荫2</td><td></td><td>90-95</td><td>5-8</td></tr><tr><td>世界树1F</td><td></td><td>95-100</td><td>5-8</td></tr><tr><td>克拉斯海岸</td><td></td><td>40-45</td><td>6-10</td></tr><tr><td>克拉斯岩洞外</td><td></td><td>45-50</td><td>6-10</td></tr><tr><td>克拉斯外滩Ⅰ</td><td></td><td>50-55</td><td>6-10</td></tr><tr><td>克拉斯岩洞一层</td><td></td><td>55-60</td><td>6-10</td></tr><tr><td>克拉斯岩洞二层</td><td></td><td>60-65</td><td>6-10</td></tr><tr><td>克拉斯岩洞三层</td><td></td><td>65-70</td><td>6-10</td></tr><tr><td>克拉斯岩洞四层</td><td></td><td>70-75</td><td>6-10</td></tr><tr><td>克拉斯岩洞五层</td><td></td><td>75-80</td><td>6-10</td></tr><tr><td>克拉斯岩洞六层</td><td></td><td>80-85</td><td>6-10</td></tr><tr><td>克拉斯岩洞七层</td><td></td><td>85-90</td><td>6-10</td></tr><tr><td>克拉斯岩洞八层</td><td></td><td>90-95</td><td>6-10</td></tr></tbody></table>]]></content>
+      
+      
+      <categories>
+          
+          <category> 百科全书 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 精灵 </tag>
+            
+            <tag> 练级 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>交易黑名单</title>
+      <link href="/MoerHero.github.io/2019/09/29/%E4%BA%A4%E6%98%93%E9%BB%91%E5%90%8D%E5%8D%95/"/>
+      <url>/MoerHero.github.io/2019/09/29/%E4%BA%A4%E6%98%93%E9%BB%91%E5%90%8D%E5%8D%95/</url>
+      
+        <content type="html"><![CDATA[<h2 id="交易黑名单"><a href="#交易黑名单" class="headerlink" title="交易黑名单"></a><strong>交易黑名单</strong></h2><p>仅内部使用，供于<strong>参考</strong>。</p><p>交易黑名单上为玩家举报有截胡、盗号等不良利用交易市场行为的玩家。</p><p>若有误挂现象发生，联系燕麦粥（QQ：409900544），若属实，删去名单后<strong>公开道歉</strong>。</p><p>若有截胡、盗号等类似情况发生，联系燕麦粥(QQ:409900544)。</p><p>对事不对人，表格仅用于参考玩家在交易市场中的信誉程度，给出建议，<strong>禁止</strong>用于玩家私下喷人、人身攻击、甚至人肉等。</p><h2 id="表单"><a href="#表单" class="headerlink" title="表单"></a><strong>表单</strong></h2><table>  <thead>    <tr>    <th> ID </th>    <th> QQ号 </th>    <th> 米米号 </th>    <th> 原因 </th>    <th> 受害人 </th>    </tr>  </thead>  <tbody>    <tr>    <td> 琉**人 </td>    <td> 269****260 </td>    <td> 348706560<br>590201<br>3899846201 </td>    <td> 1.截胡<br>2.借代练为由转走买家精灵米币 </td>    <td> 猫咪（QQ号：2187394918）</td></tr>  </tbody></table>]]></content>
+      
+      
+      <categories>
+          
+          <category> 公告 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 交易 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>王国杂志1期-数数那些梗</title>
       <link href="/MoerHero.github.io/2019/09/25/%E7%8E%8B%E5%9B%BD%E6%9D%82%E5%BF%971%E6%9C%9F-%E6%95%B0%E6%95%B0%E9%82%A3%E4%BA%9B%E6%A2%97/"/>
       <url>/MoerHero.github.io/2019/09/25/%E7%8E%8B%E5%9B%BD%E6%9D%82%E5%BF%971%E6%9C%9F-%E6%95%B0%E6%95%B0%E9%82%A3%E4%BA%9B%E6%A2%97/</url>
@@ -47,9 +99,9 @@
             
             <tag> 精灵 </tag>
             
-            <tag> 种族 </tag>
-            
             <tag> 成长 </tag>
+            
+            <tag> 种族 </tag>
             
             <tag> 技能 </tag>
             
@@ -78,11 +130,11 @@
       
         <tags>
             
+            <tag> 精灵 </tag>
+            
             <tag> 百变之术 </tag>
             
             <tag> 变身卡 </tag>
-            
-            <tag> 精灵 </tag>
             
         </tags>
       
@@ -134,9 +186,9 @@
       
         <tags>
             
-            <tag> 精灵 </tag>
-            
             <tag> 奇异蛋 </tag>
+            
+            <tag> 精灵 </tag>
             
         </tags>
       
@@ -305,7 +357,7 @@
       <link href="/MoerHero.github.io/2019/09/22/%E7%BD%91%E7%AB%99%E4%BB%8B%E7%BB%8D/"/>
       <url>/MoerHero.github.io/2019/09/22/%E7%BD%91%E7%AB%99%E4%BB%8B%E7%BB%8D/</url>
       
-        <content type="html"><![CDATA[<h2 id="分类"><a href="#分类" class="headerlink" title="分类"></a><strong>分类</strong></h2><h3 id="入站需知"><a href="#入站需知" class="headerlink" title="入站需知"></a>入站需知</h3><p>关于复兴版摩尔勇士以及该站的一些注意事项。</p><p>文章已置顶。</p><h3 id="萌新修炼手册"><a href="#萌新修炼手册" class="headerlink" title="萌新修炼手册"></a>萌新修炼手册</h3><p>前身为群内文件《萌新修炼手册（0828）》，现主要由冫夢编写更新。</p><p>主要涉及刚入坑萌新应快速上手及了解的问题。</p><p>也有很多连烙饼都不知道的小知识哦。</p><h3 id="百科全书"><a href="#百科全书" class="headerlink" title="百科全书"></a>百科全书</h3><p>主要为精灵成长、计算公式、种族或属性克制、精灵介绍、装备介绍等项目。</p><p>密密麻麻的数据，一次看个够。</p><h3 id="玩家投稿"><a href="#玩家投稿" class="headerlink" title="玩家投稿"></a>玩家投稿</h3><p>来自玩家投稿，题材方面不限，由冫夢（QQ号：1217503435）负责审核。</p><p>题材不限，游戏攻略国家大事甚至出门捡了一毛钱都欢迎发表！</p><p>符合社会主义价值观的文章即可发布，没有太多能力或经验限制，欢迎各位玩家踊跃投稿。</p><h3 id="王国杂志"><a href="#王国杂志" class="headerlink" title="王国杂志"></a>王国杂志</h3><p>什么，游戏神谕停更了？没地方看八卦了？</p><p>什么什么，为什么梦逝叫屎王，神秘帝王攻为何要给你奶子两刀，为何母鸡鸡蛋频繁失踪会导致服务器崩溃？</p><p>一切的一切，都在王国杂志，记者小黑同志将及时为您播报有关王国的一切讯息！只有更新鲜没有最新鲜！</p><p>欢迎各位勇士来投稿素材！→（小黑同志 QQ：409900544）.</p><h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p>尚制作中。</p><p>有相关idea欢迎联系燕麦粥（QQ号：409900544）。</p><h2 id="标签"><a href="#标签" class="headerlink" title="标签"></a><strong>标签</strong></h2><p>根据文章内容进行板块化区分，勇士们可以根据兴趣寻找。 </p><h2 id="归档"><a href="#归档" class="headerlink" title="归档"></a><strong>归档</strong></h2><p>为本站文章更新日志。</p><h2 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a><strong>友情链接</strong></h2><p>前往与本站相关的网站。</p><h2 id="评论功能"><a href="#评论功能" class="headerlink" title="评论功能"></a><strong>评论功能</strong></h2><p>来自livere第三方插件支持。</p><p>支持QQ、微信、微博等留言。</p><h2 id="bug反馈"><a href="#bug反馈" class="headerlink" title="bug反馈"></a><strong>bug反馈</strong></h2><p>联系燕麦粥（QQ号：409900544）。</p>]]></content>
+        <content type="html"><![CDATA[<h2 id="分类"><a href="#分类" class="headerlink" title="分类"></a><strong>分类</strong></h2><h3 id="入站需知"><a href="#入站需知" class="headerlink" title="入站需知"></a>入站需知</h3><p>关于复兴版摩尔勇士以及该站的一些注意事项。</p><p>文章已置顶。</p><h3 id="萌新修炼手册"><a href="#萌新修炼手册" class="headerlink" title="萌新修炼手册"></a>萌新修炼手册</h3><p>前身为群内文件《萌新修炼手册（0828）》，现主要由冫夢编写更新。</p><p>主要涉及刚入坑萌新应快速上手及了解的问题。</p><p>也有很多连烙饼都不知道的小知识哦。</p><h3 id="百科全书"><a href="#百科全书" class="headerlink" title="百科全书"></a>百科全书</h3><p>主要为精灵成长、计算公式、种族或属性克制、精灵介绍、装备介绍等项目。</p><p>密密麻麻的数据，一次看个够。</p><h3 id="公告"><a href="#公告" class="headerlink" title="公告"></a>公告</h3><p>不定期发布一些游戏公告、比赛信息等。</p><h3 id="玩家投稿"><a href="#玩家投稿" class="headerlink" title="玩家投稿"></a>玩家投稿</h3><p>来自玩家投稿，题材方面不限，由冫夢（QQ号：1217503435）负责审核。</p><p>题材不限，游戏攻略国家大事甚至出门捡了一毛钱都欢迎发表！</p><p>符合社会主义价值观的文章即可发布，没有太多能力或经验限制，欢迎各位玩家踊跃投稿。</p><h3 id="王国杂志"><a href="#王国杂志" class="headerlink" title="王国杂志"></a>王国杂志</h3><p>什么，游戏神谕停更了？没地方看八卦了？</p><p>什么什么，为什么梦逝叫屎王，神秘帝王攻为何要给你奶子两刀，为何母鸡鸡蛋频繁失踪会导致服务器崩溃？</p><p>一切的一切，都在王国杂志，记者小黑同志将及时为您播报有关王国的一切讯息！只有更新鲜没有最新鲜！</p><p>欢迎各位勇士来投稿素材！→（小黑同志 QQ：409900544）.</p><h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p>尚制作中。</p><p>有相关idea欢迎联系燕麦粥（QQ号：409900544）。</p><h2 id="标签"><a href="#标签" class="headerlink" title="标签"></a><strong>标签</strong></h2><p>根据文章内容进行板块化区分，勇士们可以根据兴趣寻找。 </p><h2 id="归档"><a href="#归档" class="headerlink" title="归档"></a><strong>归档</strong></h2><p>为本站文章更新日志。</p><h2 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a><strong>友情链接</strong></h2><p>前往与本站相关的网站。</p><h2 id="评论功能"><a href="#评论功能" class="headerlink" title="评论功能"></a><strong>评论功能</strong></h2><p>来自livere第三方插件支持。</p><p>支持QQ、微信、微博等留言。</p><h2 id="bug反馈"><a href="#bug反馈" class="headerlink" title="bug反馈"></a><strong>bug反馈</strong></h2><p>联系燕麦粥（QQ号：409900544）。</p>]]></content>
       
       
       <categories>
