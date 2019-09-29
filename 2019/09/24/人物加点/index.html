@@ -326,6 +326,19 @@
 </header>
 
 
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/MoerHero.github.io/';
+            }
+        }
+    })();
+</script>
+
 
 
 
@@ -690,12 +703,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/MoerHero.github.io/tags/奇异蛋/" target="_blank">
-                        <span class="chip bg-color">奇异蛋</span>
-                    </a>
-                    
                     <a href="/MoerHero.github.io/tags/精灵/" target="_blank">
                         <span class="chip bg-color">精灵</span>
+                    </a>
+                    
+                    <a href="/MoerHero.github.io/tags/奇异蛋/" target="_blank">
+                        <span class="chip bg-color">奇异蛋</span>
                     </a>
                     
                 </div>
