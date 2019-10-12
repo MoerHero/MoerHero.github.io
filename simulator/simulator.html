@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="UTF-8">
+    <title>加点模拟器</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="vue.js"></script>
+</head>
+<body>
+<div>
+    <div class="title">
+        <div>摩尔勇士100级模拟加点器</div>
+    </div>
+    <br>
+    <div id="data" class="text">
+        <label>
+            体力：<input type="text" id="blood" v-model.number="blood">
+            <br>
+            力量：<input type="text" id="power" v-model.number="power">
+            <br>
+            耐力：<input type="text" id="endurance" v-model.number="endurance">
+            <br>
+            敏捷：<input type="text" id="agile" v-model.number="agile">
+            <br>
+            智力：<input type="text" id="intelligence" v-model.number="intelligence">
+            <br>
+            剩余点数：
+            <br>
+            <input type="button" value="计算" v-on:click="calculation">
+        </label>
+        <div>
+            生命值：
+            <br>
+            攻击力：
+            <br>
+            防御：
+            <br>
+            速度：
+            <br>
+            魔力：
+            <br>
+            精神力：
+            <br>
+            恢复力：
+        </div>
+    </div>
+    <br>
+
+</div>
+</body>
+<script type="text/javascript">
+    new Vue({
+        el: '#data',
+        data: {
+            blood: 0,
+            power: 0,
+            endurance: 0,
+            agile: 0,
+            intelligence: 0,
+            shengming: 100,
+            gongji: 100,
+            fangyu: 100,
+            sudu: 100,
+            moli: 25,
+            jingshen: 100,
+            huifu: 100,
+            shengyudianshu: 456,
+        },
+        methods: {
+            calculation: function () {
+                let blood = document.getElementById('blood').value;
+                let power = document.getElementById('power').value;
+                let endurance = document.getElementById('endurance').value;
+                let agile = document.getElementById('agile').value;
+                let intelligence = document.getElementById('intelligence').value;
+                this.shengyudianshu = Math.round(456 - 1 * blood - 1 * power - 1 * endurance - 1 * agile - 1 * intelligence);
+                if (this.shengyudianshu) {
+                    alert('你所填写的点数总和为' + (456 - this.shengyudianshu) + ',请重新填写！');
+                }
+                this.shengming = Math.round(100 + 40 * blood + 10 * power + 15 * endurance + 15 * agile + 5 * intelligence);
+                this.gongji = Math.round(100 + 0.5 * blood + 10 * power + 1 * endurance + 1 * agile + 0.5 * intelligence);
+                this.fangyu = Math.round(100 + 0.5 * blood + 1 * power + 10 * endurance + 1 * agile + 0.5 * intelligence);
+                this.sudu = Math.round(100 + 0.5 * blood + 1 * power + 1 * endurance + 10 * agile + 0.5 * intelligence);
+                this.moli = Math.round(25 + 1 * blood + 2 * power + 2 * endurance + 2 * agile + 10 * intelligence);
+                this.jingshen = Math.round(100 - 0.3 * blood - 0.1 * power + 0.2 * endurance - 0.1 * agile + 0.8 * intelligence);
+                this.huifu = Math.round(100 + 0.8 * blood - 0.1 * power - 0.1 * endurance + 0.2 * agile - 0.3 * intelligence);
+
+            }
+        }
+    });
+</script>
+</html>
+<style type="text/css">
+    body {
+        background-size: 80%;
+        background: #fcf8ef;
+        background-position-y: 100px;
+    }
+
+    .title {
+        font-size: 50px;
+        padding: 20px 50px;
+        text-align: center;
+        color: orange;
+    }
+
+    .text {
+        position: absolute;
+        right: 22%;
+        font: 15px '微软雅黑';
+        text-align: center;
+        line-height: 70px;
+        width: 60%;
+        height: 500px;
+        margin-bottom: 20px;
+        color: #6b5353;
+    }
+
+    input {
+        outline-style: none;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        padding: 13px 14px;
+        width: 150px;
+        font-size: 14px;
+        font-weight: 700;
+        font-family: "微软雅黑", serif;
+    }
+
+    input:focus {
+        border-color: #66afe9;
+        outline: 0;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6)
+    }
+</style>
