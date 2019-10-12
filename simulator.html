@@ -1,7 +1,10 @@
+﻿---
+layout: false
+---
 
 <!DOCTYPE html>
 <html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
-<head><meta name="generator" content="Hexo 3.9.0">
+<head>
     <meta charset="UTF-8">
     <title>加点模拟器</title>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -15,34 +18,34 @@
     <br>
     <div id="data" class="text">
         <label>
-            体力：<input type="text" id="blood" v-model.number="blood">
+            体力：<input type="text" id="blood" v-model.number=blood>
             <br>
-            力量：<input type="text" id="power" v-model.number="power">
+            力量：<input type="text" id="power" v-model.number=power>
             <br>
-            耐力：<input type="text" id="endurance" v-model.number="endurance">
+            耐力：<input type="text" id="endurance" v-model.number=endurance>
             <br>
-            敏捷：<input type="text" id="agile" v-model.number="agile">
+            敏捷：<input type="text" id="agile" v-model.number=agile>
             <br>
-            智力：<input type="text" id="intelligence" v-model.number="intelligence">
+            智力：<input type="text" id="intelligence" v-model.number=intelligence>
             <br>
-            剩余点数：
+            剩余点数：{{shengyudianshu}}
             <br>
             <input type="button" value="计算" v-on:click="calculation">
         </label>
         <div>
-            生命值：
+            生命值：{{shengming}}
             <br>
-            攻击力：
+            攻击力：{{gongji}}
             <br>
-            防御：
+            防御：{{fangyu}}
             <br>
-            速度：
+            速度：{{sudu}}
             <br>
-            魔力：
+            魔力：{{moli}}
             <br>
-            精神力：
+            精神力：{{jingshen}}
             <br>
-            恢复力：
+            恢复力：{{huifu}}
         </div>
     </div>
     <br>
