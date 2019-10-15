@@ -1,9 +1,5 @@
-﻿---
-layout: false
----
-
-<!DOCTYPE html>
-<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml" xmlns:v-bind="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>加点模拟器</title>
@@ -17,35 +13,94 @@ layout: false
     </div>
     <br>
     <div id="data" class="text">
+
+        <div class="wrap" style="line-height: 70px; height: 500px;">
+            <div>
+                <strong>人物加点加点</strong>
+                <br>
+                <label>
+                    体力：<input type="text" id="blood">
+                    <br>
+                    力量：<input type="text" id="power">
+                    <br>
+                    耐力：<input type="text" id="endurance">
+                    <br>
+                    敏捷：<input type="text" id="agile">
+                    <br>
+                    智力：<input type="text" id="intelligence">
+                    <br>
+                    剩余点数：{{shengyudianshu}}
+                    <br>
+                </label>
+            </div>
+            <div>
+                <strong>称号</strong>
+                <br>
+                <label>
+                    <select v-model="selected">
+                        <option v-for="option in options" v-bind:value="option.value">
+                            {{ option.text }}
+                        </option>
+                    </select>
+                </label>
+                <br>
+                <span>已选中称号: {{ selected }}</span>
+            </div>
+            <div></div>
+        </div>
+        <br>
         <label>
-            体力：<input type="text" id="blood" v-model.number=blood>
-            <br>
-            力量：<input type="text" id="power" v-model.number=power>
-            <br>
-            耐力：<input type="text" id="endurance" v-model.number=endurance>
-            <br>
-            敏捷：<input type="text" id="agile" v-model.number=agile>
-            <br>
-            智力：<input type="text" id="intelligence" v-model.number=intelligence>
-            <br>
-            剩余点数：{{shengyudianshu}}
-            <br>
             <input type="button" value="计算" v-on:click="calculation">
         </label>
-        <div>
-            生命值：{{shengming}}
-            <br>
-            攻击力：{{gongji}}
-            <br>
-            防御：{{fangyu}}
-            <br>
-            速度：{{sudu}}
-            <br>
-            魔力：{{moli}}
-            <br>
-            精神力：{{jingshen}}
-            <br>
-            恢复力：{{huifu}}
+        <br>
+        <div class="wrap">
+            <div>
+                <strong>基础属性</strong>
+                <br>
+                生命值：{{shengming}}
+                <br>
+                攻击力：{{gongji}}
+                <br>
+                防御：{{fangyu}}
+                <br>
+                速度：{{sudu}}
+                <br>
+                魔力：{{moli}}
+                <br>
+                精神力：{{jingshen}}
+                <br>
+                恢复力：{{huifu}}
+            </div>
+            <div>
+                <strong>附加属性</strong>
+                <br>
+                抗魔：{{kangmo}}
+                <br>
+                必杀：{{bisha}}
+                <br>
+                反击：{{fanji}}
+                <br>
+                命中：{{mingzhong}}
+                <br>
+                闪避：{{shanbi}}
+                <br>
+            </div>
+            <div>
+                <strong>状态抗性</strong>
+                <br>
+                抗毒性：{{duxing}}
+                <br>
+                抗诅咒：{{zuzhou}}
+                <br>
+                抗昏睡：{{hunshui}}
+                <br>
+                抗石化：{{shihua}}
+                <br>
+                抗混乱：{{hunluan}}
+                <br>
+                抗遗忘：{{yiwang}}
+                <br>
+            </div>
         </div>
     </div>
     <br>
@@ -56,11 +111,21 @@ layout: false
     new Vue({
         el: '#data',
         data: {
+            // 加点
             blood: 0,
             power: 0,
             endurance: 0,
             agile: 0,
             intelligence: 0,
+            shengyudianshu: 456,
+            //称号
+            selected: '复兴版拓荒者',
+            options: [
+                { text: '复兴版拓荒者', value: '复兴版拓荒者' },
+                { text: '超时空勇士', value: '超时空勇士' },
+                { text: '复兴版牛逼', value: '复兴版牛逼' }
+            ],
+            //基础属性
             shengming: 100,
             gongji: 100,
             fangyu: 100,
@@ -68,10 +133,25 @@ layout: false
             moli: 25,
             jingshen: 100,
             huifu: 100,
-            shengyudianshu: 456,
+            //附加属性
+            kangmo: 0,
+            mingzhong: 0,
+            fanji: 0,
+            shanbi: 0,
+            bisha: 0,
+            //状态抗性
+            duxing: 0,
+            zuzhou: 0,
+            hunshui: 0,
+            shihua: 0,
+            hunluan: 0,
+            yiwang: 0,
         },
         methods: {
             calculation: function () {
+                //加点
+
+                this.shanbi = 0;
                 let blood = document.getElementById('blood').value;
                 let power = document.getElementById('power').value;
                 let endurance = document.getElementById('endurance').value;
@@ -88,13 +168,30 @@ layout: false
                 this.moli = Math.round(25 + 1 * blood + 2 * power + 2 * endurance + 2 * agile + 10 * intelligence);
                 this.jingshen = Math.round(100 - 0.3 * blood - 0.1 * power + 0.2 * endurance - 0.1 * agile + 0.8 * intelligence);
                 this.huifu = Math.round(100 + 0.8 * blood - 0.1 * power - 0.1 * endurance + 0.2 * agile - 0.3 * intelligence);
-
+                //称号
+                let title = this.selected;
+                if (title === '复兴版拓荒者') {
+                    this.shengming += 500;
+                    this.moli += 200;
+                    this.shanbi += 10;
+                } else if (title === '超时空勇士') {
+                    this.shengming += 350;
+                    this.moli += 150;
+                    this.shanbi += 10;
+                } else if (title === '复兴版牛逼') {
+                    alert('你没有此称号，滚');
             }
         }
+    }
     });
 </script>
 </html>
 <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
     body {
         background-size: 80%;
         background: #fcf8ef;
@@ -136,5 +233,20 @@ layout: false
         outline: 0;
         -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
         box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6)
+    }
+
+    .wrap {
+        display: flex;
+        height: 400px;
+        line-height: 50px;
+    }
+
+    .wrap div {
+        background: #F1EDEC;
+        flex: 1;
+    }
+
+    .wrap div + div {
+        margin-left: 10px;
     }
 </style>
