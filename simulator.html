@@ -36,13 +36,16 @@
             <div>
                 <strong>称号</strong>
                 <br>
-                <label>
-                    <select v-model="selected">
-                        <option v-for="option in options" v-bind:value="option.value">
-                            {{ option.text }}
-                        </option>
-                    </select>
-                </label>
+                <div class="sel_wrap">
+                    <label>
+                        <select v-model="selected" class="select">
+                            <option v-for="option in options" v-bind:value="option.value">
+                                {{ option.text }}
+                            </option>
+                        </select>
+                    </label>
+                </div>
+
                 <br>
                 <span>已选中称号: {{ selected }}</span>
             </div>
@@ -119,11 +122,11 @@
             intelligence: 0,
             shengyudianshu: 456,
             //称号
-            selected: '复兴版拓荒者',
+            selected: '',
             options: [
-                { text: '复兴版拓荒者', value: '复兴版拓荒者' },
-                { text: '超时空勇士', value: '超时空勇士' },
-                { text: '复兴版牛逼', value: '复兴版牛逼' }
+                {text: '复兴版拓荒者', value: '复兴版拓荒者'},
+                {text: '超时空勇士', value: '超时空勇士'},
+                {text: '复兴版牛逼', value: '复兴版牛逼'}
             ],
             //基础属性
             shengming: 100,
@@ -180,9 +183,9 @@
                     this.shanbi += 10;
                 } else if (title === '复兴版牛逼') {
                     alert('你没有此称号，滚');
+                }
             }
         }
-    }
     });
 </script>
 </html>
@@ -249,4 +252,21 @@
     .wrap div + div {
         margin-left: 10px;
     }
+
+    .select {
+        /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+        border:1px blue dashed;
+        /*很关键：将默认的select选择框样式清除*/
+        appearance:none;
+        -moz-appearance:none;
+        -webkit-appearance:none;
+        /*在选择框的最右侧中间显示小箭头图片*/
+        background:url("http://www.santii.com/source/1507797721809079.gif") no-repeat scroll right center transparent;
+        /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+        padding-right:14px;
+    }
+    /*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+    select::-ms-expand{display: none;
+    }
+
 </style>
