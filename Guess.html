@@ -30,7 +30,7 @@
             </div>
             <div class="row">
                 <div class="input-field col s2 offset-s5">
-                    <button class="btn waves-effect waves-light" type="submit" onclick="click()">Submit
+                    <button class="btn waves-effect waves-light" type="button" onclick="click()">Submit
                         <i class="material-icons right">send</i>
                     </button>
                 </div>
@@ -43,9 +43,9 @@
     function click() {
         let secret = document.getElementById('secret').value;
         if (secret === '阿鸭') {
-            window.location.href='https://moerhero.github.io/HappyBirthdayToYou';
+            window.location.href="https://moerhero.github.io/HappyBirthdayToYou";
         } else {
-            window.location.href='https://moerhero.github.io/TryAgain';
+            window.location.href="https://moerhero.github.io/TryAgain";
         }
 
     }
