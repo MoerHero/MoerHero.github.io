@@ -9,28 +9,25 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 <body>
-
 <nav class="teal">
     <div class="nav-wrapper">
-        <a href="#" class="brand-logo center"></a>
+        <a href="#" class="brand-logo center">猜错啦！</a>
     </div>
 </nav>
 
 <div><br/><br/><br/><br/><br/></div>
-<div class="container">
+<div class="container" id="app">
     <div class="row">
-        <form class="col s12" method="post">
-            <div class="row">
-                <div class="input-field col s12">
-                    <input id="form_secret" type="text" class="validate" name="form_secret">
-                    <label for="form_secret" id="secret">Secret</label>
-                </div>
-            </div>
+        阿嘞嘞，你怎么能连我给你的备注都不知道呢!!!
+        <br>
+        再给你<strong>一</strong>次机会，这次不能错了喔~
+        <form class="col s12">
             <div class="row">
                 <div class="input-field col s2 offset-s5">
-                    <button class="btn waves-effect waves-light" type="submit" onclick="click()">Submit
+                    <button class="btn waves-effect waves-light" type="button" v-on:click="click()">嘎再给个机会叭
                         <i class="material-icons right">send</i>
                     </button>
                 </div>
@@ -40,14 +37,14 @@
 </div>
 
 <script>
-    function click() {
-        let secret = document.getElementById('secret').value;
-        if (secret === '阿鸭') {
-            window.location.href="https://moerhero.github.io/HappyBirthdayToYou";
-        } else {
-            window.location.href="https://moerhero.github.io/TryAgain";
+    var app = new Vue({
+        el: '#app',
+        methods: {
+            click: function () {
+                window.location.href = "https://moerhero.github.io/Guess";
+            }
         }
-    }
+    })
 </script>
 
 </body>
